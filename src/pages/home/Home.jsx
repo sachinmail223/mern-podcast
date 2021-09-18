@@ -13,7 +13,7 @@ const signInLinkStyle = {
 }
 const history = useHistory()
 const startRegistration = ()=>{
-  history.push('/register')
+  history.push('/authenticate')
 }
 
 
@@ -26,10 +26,10 @@ const startRegistration = ()=>{
         nothing breaks
       </p>
       <div>
-      <Button text="Get your username" onClick={startRegistration}></Button>
+      <Button text="Let's Go" onClick={startRegistration}></Button>
           <div className={styles.singingWrapper}>
               <span className={styles.hasInvite}>Have an invite code</span>
-              <Link style={signInLinkStyle} to="/login"> Sing in</Link>
+              
           </div>
       </div>
        </Card>
